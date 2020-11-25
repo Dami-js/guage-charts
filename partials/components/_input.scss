@@ -1,0 +1,21 @@
+%input-styles {
+  border-radius: $border-pill;
+  background-color: $light;
+  padding: 0.5rem;
+  border: 1px solid $secondary;
+  outline: 0;
+  display: flex;
+  width: 100%;
+  color: lighten($black, 20%);
+}
+
+.form-field {
+  @extend %input-styles;
+}
+
+select {
+  &.form-field {
+    text-transform: capitalize;
+    width: 150px;
+  }
+}

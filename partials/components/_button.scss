@@ -1,0 +1,9 @@
+.btn {
+  border-radius: $border-pill;
+  padding: $spacer * 0.73 $spacer * 2.5;
+  border: none;
+  color: $white;
+  background-color: $primary;
+  outline: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+// colors
+$primary: #32a4f5;
+$secondary: #e1e1e1;
+$light: #f0f0f0;
+$black: rgb(28, 28, 28);
+$gray: rgb(102, 102, 102);
+$white: #ffffff;
+$success: #00a400;
+$danger: red;
+
+// font sizes
+$font-small: 0.9rem;
+$font-normal: 1rem;
+$font-large: 1.3rem;
+$font-xlarge: 1.8rem;
+
+$font-sizes: (
+  "sm": $font-small,
+  "md": $font-normal,
+  "lg": $font-large,
+  "xl": $font-xlarge
+);
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "black": $black,
+  "gray": $gray,
+  "success": $success,
+  "danger": $danger,
+  "white": $white
+);
+
+// font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+// borders
+$border-pill: 25px;
+$border-curve: 5px;
+$border-curve-large: 10px;
+
+// spacers
+$spacer: 0.75rem;
+
+// Responsiveness
+$mobile: 767px;
+$tablet: 1023px;
+$large: 1440px;

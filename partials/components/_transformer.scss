@@ -1,0 +1,135 @@
+.transformer {
+  margin-top: 2rem;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    @include mobile-tablet {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    gap: 1rem 2rem;
+    justify-content: space-between;
+  }
+  // height: 300px;
+  background-color: $danger;
+  border-radius: $border-curve-large;
+  padding: 1rem 0.3rem 0.3rem;
+
+  &__inner {
+    display: flex;
+    border-radius: $border-curve-large;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: $white;
+    padding: 1rem 0 2rem;
+    .title {
+      text-align: center;
+      padding: 0.15rem 0;
+      p {
+        text-transform: capitalize;
+        font-size: $font-small;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .users {
+      padding: 0 1rem;
+      @extend %flex-row;
+      justify-content: space-between;
+      p {
+        font-size: $font-small;
+        i {
+          margin-right: 0.3rem;
+        }
+      }
+    }
+
+    .reader {
+      @extend %flex-row;
+      // align-items: flex-end;
+      justify-content: space-between;
+      padding: 0.2rem 1rem;
+      height: 70px;
+      .capacity {
+        width: 18%;
+        // align-self: flex-end;
+        p {
+          font-size: $font-small - 0.1rem;
+          line-height: 1.2;
+        }
+        span {
+          font-size: $font-small;
+          background-color: $secondary;
+          width: fit-content;
+          padding: 0.2rem 0;
+          display: block;
+          padding: 4px;
+          color: $white;
+          text-align: center;
+          font-weight: $font-weight-semi-bold;
+        }
+      }
+
+      .guage {
+        width: 54%;
+        height: 100%;
+        @extend %flex-row;
+        justify-content: center;
+      }
+
+      .reader_value {
+        text-align: right;
+        font-size: $font-small;
+        width: 28%;
+        p {
+          line-height: 1.3;
+          &:nth-child(1) {
+            font-size: $font-small - 0.16rem;
+            font-weight: $font-weight-bold;
+          }
+          &:nth-child(3) {
+            i {
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
+
+    .bar-cont {
+      @extend %flex-row;
+      margin-top: 1.5rem;
+      padding-left: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .bar {
+        margin: 0.5rem 1rem 0.5rem 0;
+        border: 2px solid $success;
+        width: 35px;
+        height: 100px;
+        background-color: $secondary;
+        position: relative;
+        &.danger-border {
+          border: 2px solid $danger;
+        }
+        p {
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          // width: 100%;
+          font-size: $font-small - 0.2rem;
+          font-weight: $font-weight-semi-bold;
+        }
+        .progress {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: $success;
+          width: 100%;
+          transition: all 500ms ease-in;
+          // height: 20%;
+        }
+      }
+    }
+  }
+}

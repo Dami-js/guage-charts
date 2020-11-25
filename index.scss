@@ -1,0 +1,21 @@
+@import "./partials/variables", "./partials/reset", "./partials/mixins",
+  "./partials/helpers";
+
+// components
+@import "./partials/components/info-bar";
+@import "./partials/components/filter-row";
+@import "./partials/components/input";
+@import "./partials/components/button";
+@import "./partials/components/transformer";
+@import "./partials/components/guage-chart";
+
+.container {
+  // max-width: 90%;
+  margin: auto;
+  width: 95%;
+  padding: 0 $spacer;
+}
+
+// * {
+//   border: 0.1px solid green !important;
+// }

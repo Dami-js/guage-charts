@@ -1,0 +1,33 @@
+@each $name, $val in $font-sizes {
+  .ft-#{$name} {
+    font-size: $val !important;
+  }
+}
+
+@each $name, $val in $colors {
+  .text-#{$name} {
+    color: $val !important;
+  }
+}
+
+@each $name, $val in $colors {
+  .#{$name} {
+    background-color: $val !important;
+  }
+}
+
+%flex-row {
+  display: flex;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+%flex-row-center {
+  @extend %flex-row;
+  justify-content: center;
+}
